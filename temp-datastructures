@@ -1,0 +1,76 @@
+{
+  "nbformat": 4,
+  "nbformat_minor": 0,
+  "metadata": {
+    "colab": {
+      "name": "Welcome To Colaboratory",
+      "provenance": [],
+      "collapsed_sections": [],
+      "include_colab_link": true
+    },
+    "kernelspec": {
+      "display_name": "Python 3",
+      "name": "python3"
+    }
+  },
+  "cells": [
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "view-in-github",
+        "colab_type": "text"
+      },
+      "source": [
+        "<a href=\"https://colab.research.google.com/github/karthikeyakumar/python-datastructures/blob/main/temp-datastructures\" target=\"_parent\"><img src=\"https://colab.research.google.com/assets/colab-badge.svg\" alt=\"Open In Colab\"/></a>"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "metadata": {
+        "id": "1aou-yq8487C",
+        "outputId": "bad4a7fe-afcd-44e9-9581-04235ca05a70",
+        "colab": {
+          "base_uri": "https://localhost:8080/",
+          "height": 134
+        }
+      },
+      "source": [
+        "class node:\r\n",
+        "  def__init__(self,val):\r\n",
+        "    self.value=val\r\n",
+        "    self.left=None\r\n",
+        "    self.right=None\r\n",
+        "  def inser(self,data):\r\n",
+        "    if self.value==data:\r\n",
+        "      return False\r\n",
+        "    elif self.value> data:\r\n",
+        "      if self.left:\r\n",
+        "        return self.left.insert(data)\r\n",
+        "      else:\r\n",
+        "        self.left=node(data)\r\n",
+        "        \r\n",
+        "class Tree:\r\n",
+        "  def __init__(self):\r\n",
+        "    self.root=None\r\n",
+        "  def insert(self,data):\r\n",
+        "    if self.root:\r\n",
+        "      return self.root.insert(data)\r\n",
+        "    else:\r\n",
+        "      self.root=node(data)\r\n",
+        "      return True\r\n",
+        "    "
+      ],
+      "execution_count": 8,
+      "outputs": [
+        {
+          "output_type": "error",
+          "ename": "SyntaxError",
+          "evalue": "ignored",
+          "traceback": [
+            "\u001b[0;36m  File \u001b[0;32m\"<ipython-input-8-88493be4f0ba>\"\u001b[0;36m, line \u001b[0;32m2\u001b[0m\n\u001b[0;31m    def__init__(self,val):\u001b[0m\n\u001b[0m                          ^\u001b[0m\n\u001b[0;31mSyntaxError\u001b[0m\u001b[0;31m:\u001b[0m invalid syntax\n"
+          ]
+        }
+      ]
+    }
+  ]
+}
